@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Light-gray);
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+}
+
+.qr-card {
+    width: 320px;
+    height: 497px;
+    background-color: var(--White);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px; 
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.qr-code img {
+    max-width: 100%;
+    border-radius: 10px; 
+}
+
+.qr-text p:nth-child(1) {
+    margin: 10px;
+    font-family: Outfit, sans-serif;
+    font-weight: 700; 
+}
+
+.qr-text p:nth-child(2) {
+    margin: 10px;
+    font-family: Outfit, sans-serif;
+    font-weight: 400;
+    color: var(--Grayish-blue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px){
+    .qr-card {
+        max-width: 320px;
+    }   
+}
